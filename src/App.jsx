@@ -1,7 +1,14 @@
+import ThemeContextProvider from "./context/ThemeContextProvider.jsx";
+import Header from "./components/shared/Header.jsx";
+
 function App() {
+
+
     return (
         <>
-            <h1 className="text-3xl text-red-500 font-bold underline">App is working..</h1>
+            <ThemeContextProvider>
+                <Header/>
+            </ThemeContextProvider>
         </>
     );
 }
